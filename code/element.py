@@ -88,21 +88,6 @@ if __name__ == "__main__":
     entry1=Entry(fen)
     entry1.place(3)
     print(entry1.run())
-    
-    
-    
-    
-    
-    
-    """width,heigh=os.get_terminal_size()
-    background=[" "]*width*(heigh-1)
-
-    test=Utilitie(heigh,width,background)
-    print(test.select_choices(["print","send","copy"],(20,20)))
-    test.clear_screen()
-    print(test.entry(heigh-4))
-    test.clear_screen()
-    print(test.password())"""
 
 
 
