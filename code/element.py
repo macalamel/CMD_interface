@@ -50,7 +50,9 @@ class Entry:
         self.x_pos=0
         self.y_pos=0
     def set_up_forme(self,text:list=[]):
-        forme=[["-"]*self.master.width,list(">"+"".join(text)),["-"]*self.master.width]
+        champ=list(">"+"".join(text))
+        print(len(champ))
+        forme=[["-"]*self.master.width,champ+[" "]*(self.master.width-len(champ)),["-"]*self.master.width]
         return forme
     def place(self,y_pos:int):
         self.y_pos=y_pos
